@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/block-country.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>REST Contries API project</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container header-flex">
+            <h1 class="text-header">Where in the world?</h1>
+             <!-- dark/light mode section -->
+             <div id="theme" class="theme">
+                <img id="moon" class="moon-icon" src="icons/moon-solid.svg" alt="">
+                <p>Dark Mode</p>
+             </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- filters section  -->
+        <div class="container top-bar">
+            <form class="form bg-styles">
+                    <img src="icons/search-solid.svg" alt="" id="search-icon" class="search-icon">
+                    <input id="search" type="search" class="search" placeholder="Search for a country...">
+            </form>
+
+            <div id="filter" class="filter">
+                <div class="selector bg-styles">
+                  <p>Filter By Region</p>
+                  <img src="icons/triangle.svg" alt="" class="triangle">
+                </div>
+                <div class="options">
+                    <div class="region" data-value="All">All</div>
+                    <div class="region" data-value="Asia">Asia</div>
+                    <div class="region" data-value="Africa">Africa</div>
+                    <div class="region" data-value="Europe">Europe</div>
+                    <div class="region" data-value="Americas">Americas</div>
+                    <div class="region" data-value="Oceania">Oceania</div>
+                    <div class="region" data-value="Polar">Polar</div>
+                </div>
+            </div>
+        </div>
+        <div class="country-container"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
